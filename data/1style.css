@@ -1,0 +1,182 @@
+.stAppHeader{
+  display: none;
+}
+
+/* App Hintergrund */
+[data-testid="stAppViewContainer"] {
+  background: #EFEFBB;
+  background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+  background: linear-gradient(to right, #d2d1da, #e6e6b4); 
+}
+
+h2{
+  color: #0b0b0b !important;
+  font-weight: bold !important;
+  font-size: 1.8rem !important;
+}
+
+/* RDF-Export Layout*/
+ .st-emotion-cache-13fuva2 h2{
+  padding: 1rem 0rem 0.4rem 0rem !important;
+  display: flex !important;
+  align-items: center !important;
+
+ }
+
+/* RDF-Export Layout Text*/
+ .st-emotion-cache-13fuva2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RDF-Export Layout Left*/
+.st-emotion-cache-10xjvz7  {
+  display: flex;
+  justify-content: right;
+  align-items: center; 
+}
+
+/* Cards Grid Layout */
+.st-emotion-cache-nef7d9, .st-emotion-cache-i8adoz, .st-emotion-cache-13fuva2, .st-emotion-cache-1s7js3{
+  background-color: #fff;
+  border-radius: 18px;
+  border: none;
+  padding: 15px 30px !important;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.04) inset,
+    0 0.4px 0.8px rgba(0, 0, 0, 0.06),
+    0 3px 6px rgba(0, 0, 0, 0.05),
+    0 12px 16px rgba(0, 0, 0, 0.04);
+}
+
+/* Expander Card */
+.st-emotion-cache-1csjwak{
+    background-color: #fff;
+    border-radius: 18px;
+    border: none;
+    padding: 2px !important;
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.04) inset,
+      0 0.4px 0.8px rgba(0, 0, 0, 0.06),
+      0 3px 6px rgba(0, 0, 0, 0.05),
+      0 12px 16px rgba(0, 0, 0, 0.04);
+}
+
+/* Expander dropped down */
+.st-emotion-cache-1clstc5 {
+  background-color: white;
+}
+
+/* Drag and drop */
+.st-emotion-cache-1p8gjb0{
+  border-radius: 20px;
+  background-color: rgb(142, 150, 234); 
+  outline: 4px solid rgb(142, 150, 234);
+  border: 2.5px rgb(255, 255, 255) dashed;
+  margin-bottom: 1rem;
+  padding:3rem;
+}
+
+/* Drag and drop icon */
+.st-emotion-cache-1p8gjb0 svg{
+  fill: white;
+}
+
+/* Drag and drop text */
+.st-emotion-cache-j7qwjs, .st-emotion-cache-xp5x25{
+  color: #fff;
+  font-size: 1.1rem;
+} 
+
+/* Drag and drop icon */
+path{
+  color:#555555;
+}
+
+/* Tabs Choose  */
+.stTabs [data-baseweb="tab-list"]{ 
+  gap: 1px; 
+}
+
+.stTabs [data-baseweb="tab"]{
+  height: 26px;
+  padding: 0.2rem;
+  margin: 0.75rem;
+}
+
+/* App Display */
+.block-container{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 4rem;
+}
+
+/* KI-Konfiguration expander */
+.stExpander .st-emotion-cache-1dtefog p {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #4f4f4f !important;
+}
+
+/* CSV Upload Icon */
+.st-emotion-cache-1xa4bxf path{
+  color: rgb(58, 23, 182) !important;
+}
+
+/* Header */
+.Header{
+  display: flex; align-items: center; gap: 28px;
+}
+
+.Header-Container{
+  margin: 2rem 0rem 1rem 0rem; 
+  font-size: 2.5rem;
+  z-index: 50;
+  background-color: #fff;
+  padding: 36px 24px;
+  border-radius: 18px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.04) inset,
+    0 0.4px 0.8px rgba(0, 0, 0, 0.06),
+    0 3px 6px rgba(0, 0, 0, 0.05),
+    0 12px 16px rgba(0, 0, 0, 0.04);
+}
+
+.Header-Container h1{
+  font-size: 2.5rem;
+  color:#0b0b0b;
+}
+
+.Header-Container p{
+  font-size: 1rem;
+}
+
+.Header-Icon{
+  width: 60px; 
+  height: 60px; 
+  border-radius: 100px;
+  background: 
+  radial-gradient(
+  120% 120% at 10% 0%,
+  #1e5fcf 0%,
+  #6aa2ff 70%, 
+  #b8d3ff 100%);
+}
+
+.Header-Text h1{
+  margin: 0; padding: 0;
+  color:#0b0b0b;
+  font-size: 2rem; 
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+}
+
+.Header-Text p.beschreibung{
+  margin: .25rem 0 0;
+  color:#0b0b0b;
+  font-size: .95rem; line-height: 1.35;
+}
+

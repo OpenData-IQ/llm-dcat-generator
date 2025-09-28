@@ -1,0 +1,17 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+
+SELECT DISTINCT ?dataset ?title ?description (COUNT(?keyword) as ?count) 
+WHERE {
+    BIND( {{dataset}} AS ?fixedDataset)
+    ?fixedDataset dcat:keyword ?keyword .
+    ?fixedDataset dct:title ?titleFixed .
+    FILTER(?fixedDataset != ?dataset) .
+    ?dataset dcat:keyword ?keyword ;
+             dct:title ?title ;
+             dct:description ?description .
+} 
+GROUP BY ?dataset ?fixedDataset ?title ?description
+HAVING (COUNT(?keyword) > {{ count_threshold }})
+ORDER BY desc(?count)
+LIMIT {{ limit }}
